@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <Description>A comprehensive .NET class library that enhances the capabilities of DynamicData, a powerful reactive collections library for .NET applications.</Description>
+    <PackageTags>My;Utilities;Extensions;DynamicData</PackageTags>
+    <Version>1.0.0</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="DynamicData" Version="8.4.1" />
+    <PackageReference Include="MyNet.Utilities" Version="1.0.0" />
+  </ItemGroup>
+
+</Project>
