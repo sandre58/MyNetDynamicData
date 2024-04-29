@@ -1,7 +1,7 @@
 # Copyright (c) Stéphane ANDRE.
 # Licensed under the MIT license.
 
-# This continuous integration pipeline is triggered anytime a user pushes code to the repo.
+# This continuous integration pipeline is triggered anytime a user pushes code to main branch.
 # This pipeline builds the solution and runs unit tests
 
 name: Publish Nugets - Private
@@ -71,5 +71,13 @@ jobs:
         uses: dansiegel/publish-nuget@master # https://github.com/marketplace/actions/publish-nuget-packages
         with:
           filename: 'Artifacts/*.nupkg'
+          feedUrl: ${{ vars.PRIVATE_NUGET_API_SOURCE }}
+          apiKey: ${{ secrets.PRIVATE_NUGET_API_KEY }}
+
+      # publish artifacts (symbols)
+      - name: Publish NuGets symbols
+        uses: dansiegel/publish-nuget@master # https://github.com/marketplace/actions/publish-nuget-packages
+        with:
+          filename: 'Artifacts/*.snupkg'
           feedUrl: ${{ vars.PRIVATE_NUGET_API_SOURCE }}
           apiKey: ${{ secrets.PRIVATE_NUGET_API_KEY }}

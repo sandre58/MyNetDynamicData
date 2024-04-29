@@ -1,7 +1,7 @@
 # Copyright (c) Stéphane ANDRE.
 # Licensed under the MIT license.
 
-# This continuous integration pipeline is triggered anytime a user pushes code to the repo.
+# This continuous integration pipeline is triggered anytime a user pushes code to main branch.
 # This pipeline create a release
 
 name: Create Release

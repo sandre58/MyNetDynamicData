@@ -70,4 +70,4 @@ My .NET DynamicData is provided as-is under the MIT license. For more informatio
 [framework-shield]: https://img.shields.io/badge/.NET-8.0-purple
 [framework-url]: https://github.com/sandre58/MyNetDynamicData/tree/main/src/MyNet.DynamicData.Extensions
 [version-shield]: https://img.shields.io/nuget/v/MyNet.DynamicData.Extensions
-[version-url]: https://github.com/sandre58/MyNetDynamicData/pkgs/nuget/MyNet.DynamicData.Extensions
+[version-url]: https://www.nuget.org/packages/MyNet.DynamicData.Extensions

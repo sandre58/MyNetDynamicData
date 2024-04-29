@@ -2,7 +2,7 @@
 # Licensed under the MIT license.
 
 # This continuous integration pipeline is triggered anytime a release is published
-# This pipeline publish nugets
+# This pipeline publishes all packages (skips existing packages) from current release on nuget repository
 
 name: Publish Nugets - Release
 
@@ -33,5 +33,13 @@ jobs:
         uses: dansiegel/publish-nuget@master # https://github.com/marketplace/actions/publish-nuget-packages
         with:
           filename: 'Artifacts/*.nupkg'
+          feedUrl: ${{ vars.NUGET_API_SOURCE }}
+          apiKey: ${{ secrets.NUGET_API_KEY }}
+
+      # publish artifacts (symbols)
+      - name: Publish NuGets symbols
+        uses: dansiegel/publish-nuget@master # https://github.com/marketplace/actions/publish-nuget-packages
+        with:
+          filename: 'Artifacts/*.snupkg'
           feedUrl: ${{ vars.NUGET_API_SOURCE }}
           apiKey: ${{ secrets.NUGET_API_KEY }}
