@@ -14,7 +14,7 @@ using DynamicData.Binding;
 using DynamicData.Kernel;
 using MyNet.Utilities;
 
-namespace My.DynamicData.Extensions
+namespace MyNet.DynamicData.Extensions
 {
     public static class DynamicDataExtensions
     {

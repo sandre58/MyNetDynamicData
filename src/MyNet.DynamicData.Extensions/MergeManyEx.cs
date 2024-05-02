@@ -6,7 +6,7 @@ using System.Linq;
 using System.Reactive.Linq;
 using DynamicData;
 
-namespace My.DynamicData.Extensions
+namespace MyNet.DynamicData.Extensions
 {
     internal sealed class MergeManyEx<T, TDestination>(IObservable<IChangeSet<T>> source,
                Func<T, IObservable<IChangeSet<TDestination>>> observableSelector) where T : notnull where TDestination : notnull
