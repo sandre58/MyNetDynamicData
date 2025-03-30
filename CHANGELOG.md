@@ -1,5 +1,10 @@
 # Changelog
 
+## [v4.0.0] - 2025-03-30
+### :recycle: Refactors
+- [`0e53e55`](https://github.com/sandre58/MyNetDynamicData/commit/0e53e55147209628c7386076344c824be3267a8e) - fix style
+
+
 ## [v3.0.0] - 2024-12-21
 ### :boom: BREAKING CHANGES
 - due to [`c2e300b`](https://github.com/sandre58/MyNetDynamicData/commit/c2e300b591ab8295f140c46b15ef40621e2769be) - Add net9.0 support and update MyNet.Utilities package:
@@ -27,3 +32,4 @@
 - Initialize repository
 [v2.0.0]: https://github.com/sandre58/MyNetDynamicData/compare/v1.0.0...v2.0.0
 [v3.0.0]: https://github.com/sandre58/MyNetDynamicData/compare/v2.2.0...v3.0.0
+[v4.0.0]: https://github.com/sandre58/MyNetDynamicData/compare/v3.0.0...v4.0.0
