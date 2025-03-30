@@ -1,19 +1,23 @@
-﻿// Copyright (c) Stéphane ANDRE. All Right Reserved.
-// See the LICENSE file in the project root for more information.
+﻿// -----------------------------------------------------------------------
+// <copyright file="ExtendedObservableCollection.cs" company="Stéphane ANDRE">
+// Copyright (c) Stéphane ANDRE. All rights reserved.
+// </copyright>
+// -----------------------------------------------------------------------
 
 using System.Collections.Generic;
 using DynamicData;
 using DynamicData.Binding;
 using MyNet.Utilities.Collections;
 
-namespace MyNet.DynamicData.Extensions
+namespace MyNet.DynamicData.Extensions;
+
+public class ExtendedObservableCollection<T> : OptimizedObservableCollection<T>, IObservableCollection<T>, IExtendedList<T>
 {
-    public class ExtendedObservableCollection<T> : OptimizedObservableCollection<T>, IObservableCollection<T>, IExtendedList<T>
-    {
-        public ExtendedObservableCollection() : base() { }
+    public ExtendedObservableCollection() { }
 
-        public ExtendedObservableCollection(List<T> list) : base(list) { }
+    public ExtendedObservableCollection(IList<T> list)
+        : base(list) { }
 
-        public ExtendedObservableCollection(IEnumerable<T> collection) : base(collection) { }
-    }
+    public ExtendedObservableCollection(IEnumerable<T> collection)
+        : base(collection) { }
 }
