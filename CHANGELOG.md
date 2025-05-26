@@ -1,5 +1,10 @@
 # Changelog
 
+## [v5.0.0] - 2025-05-26
+### :recycle: Refactors
+- [`023c22c`](https://github.com/sandre58/MyNetDynamicData/commit/023c22cbda7576e43767776a89ebdba0bec874f6) - install .NET 10.0
+
+
 ## [v4.0.0] - 2025-03-30
 ### :recycle: Refactors
 - [`0e53e55`](https://github.com/sandre58/MyNetDynamicData/commit/0e53e55147209628c7386076344c824be3267a8e) - fix style
@@ -33,3 +38,4 @@
 [v2.0.0]: https://github.com/sandre58/MyNetDynamicData/compare/v1.0.0...v2.0.0
 [v3.0.0]: https://github.com/sandre58/MyNetDynamicData/compare/v2.2.0...v3.0.0
 [v4.0.0]: https://github.com/sandre58/MyNetDynamicData/compare/v3.0.0...v4.0.0
+[v5.0.0]: https://github.com/sandre58/MyNetDynamicData/compare/v4.0.0...v5.0.0
