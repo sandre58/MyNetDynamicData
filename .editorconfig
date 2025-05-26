@@ -74,6 +74,9 @@ csharp_indent_case_contents_when_block = true
 csharp_indent_switch_labels = true
 csharp_indent_labels = flush_left
 
+# Namespace preferences
+csharp_style_namespace_declarations = file_scoped
+
 # Prefer "var" everywhere
 csharp_style_var_for_built_in_types = true:suggestion
 csharp_style_var_when_type_is_apparent = true:suggestion
@@ -216,3 +219,8 @@ dotnet_naming_rule.members_should_be_pascal_case.symbols = all_members
 dotnet_naming_rule.members_should_be_pascal_case.style = non_private_static_field_style
 
 dotnet_naming_symbols.all_members.applicable_kinds = *
+
+# Resharper
+resharper_arrange_object_creation_when_type_not_evident_highlighting=none
+resharper_non_readonly_member_in_get_hash_code_highlighting=none
+resharper_virtual_member_call_in_constructor_highlighting=none

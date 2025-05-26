@@ -48,6 +48,7 @@ jobs:
     uses: avantipoint/workflow-templates/.github/workflows/dotnet-build.yml@master # https://github.com/AvantiPoint/workflow-templates/blob/master/.github/workflows/dotnet-build.yml
     needs: [ gitversion ]
     with:
+      dotnet-version: '10.0.100-preview.4.25258.110'
       dotnet-test-logger: GitHubActions --no-build --no-restore
       build-args: '/p:Version=${{needs.gitversion.outputs.SemVer}}'
       name: Build

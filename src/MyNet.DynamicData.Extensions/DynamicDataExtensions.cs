@@ -134,10 +134,13 @@ public static class DynamicDataExtensions
                         source.Insert(change.CurrentIndex, change.Current);
                         break;
                     case ChangeReason.Remove:
-                        source.Remove(change.Current);
+                        _ = source.Remove(change.Current);
                         break;
                     case ChangeReason.Moved:
                         source.Move(change.PreviousIndex, change.CurrentIndex);
+                        break;
+                    case ChangeReason.Refresh:
+                    default:
                         break;
                 }
             });
